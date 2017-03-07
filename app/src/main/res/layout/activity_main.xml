@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:stretchColumns="1"
+    tools:context="com.example.administrator.resgistdemo.MainActivity">
+
+    <TableRow>
+        <TextView
+            android:text="用户名:"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:hint="您的账户名"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="设置密码:"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/passwd"
+            android:inputType="textPassword"
+            android:hint="建议至少使用二种字符组合"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="确认密码:"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/repasswd"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="中国0086:"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/register_phone"
+            android:hint="建议使用常用手机号码"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="手机验证码:"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/phono_num_verify_no"
+            android:hint="请输入手机验证码"
+            android:layout_height="wrap_content"
+            />
+        <!--<Button-->
+            <!--android:id="@+id/get_verify_no"-->
+            <!--android:text="获取验证码"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/register"
+            android:textSize="24sp"
+            android:text="立即注册"
+            android:layout_span="2"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+</TableLayout>
