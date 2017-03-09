@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <!--增加自定义控件-->
+    <com.example.administrator.resgistdemo.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </com.example.administrator.resgistdemo.TitleLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@drawable/phone"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:text="test"
+            android:background="@drawable/input"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@drawable/phone"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:text="test"
+            android:background="@drawable/input"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/login_btn_backgroud"
+        android:text="登录"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+</LinearLayout>

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -36,37 +35,38 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.register:
-                if (useName.getText().toString().isEmpty()) {
-                    Toast.makeText(this, "请输入用户名", Toast.LENGTH_SHORT).show();
-                    break;
-                }
+                //if (useName.getText().toString().isEmpty()) {
+                //    Toast.makeText(this, "请输入用户名", Toast.LENGTH_SHORT).show();
+                //    break;
+                //}
 
-                if (passwd.getText().toString().isEmpty()) {
-                    Toast.makeText(this, "请输入密码", Toast.LENGTH_SHORT).show();
-                    break;
-                }
+                //if (passwd.getText().toString().isEmpty()) {
+                //    Toast.makeText(this, "请输入密码", Toast.LENGTH_SHORT).show();
+                //    break;
+                //}
 
-                if (rePasswd.getText().toString().isEmpty()) {
-                    Toast.makeText(this, "请输入确认密码", Toast.LENGTH_SHORT).show();
-                    break;
-                }
+                //if (rePasswd.getText().toString().isEmpty()) {
+                //    Toast.makeText(this, "请输入确认密码", Toast.LENGTH_SHORT).show();
+                //    break;
+                //}
 
-                if (!rePasswd.getText().toString().equals(passwd.getText().toString())) {
-                    Toast.makeText(this, "密码不一致", Toast.LENGTH_SHORT).show();
-                    break;
-                }
+                //if (!rePasswd.getText().toString().equals(passwd.getText().toString())) {
+                //    Toast.makeText(this, "密码不一致", Toast.LENGTH_SHORT).show();
+                //    break;
+                //}
 
-                if (registerPhone.getText().toString().isEmpty()) {
-                    Toast.makeText(this, "请输入手机号", Toast.LENGTH_SHORT).show();
-                    break;
-                }
+                //if (registerPhone.getText().toString().isEmpty()) {
+                //    Toast.makeText(this, "请输入手机号", Toast.LENGTH_SHORT).show();
+                //    break;
+                //}
 
-                if (phoneVerifyCode.getText().toString().isEmpty()) {
-                    Toast.makeText(this, "验证码不能为空", Toast.LENGTH_SHORT).show();
-                    break;
-                }
+                //if (phoneVerifyCode.getText().toString().isEmpty()) {
+                //    Toast.makeText(this, "验证码不能为空", Toast.LENGTH_SHORT).show();
+                //    break;
+                //}
 
-                Intent intent = new Intent(this, RegisterSuccessActivity.class);
+//                Intent intent = new Intent(this, RegisterSuccessActivity.class);
+                Intent intent = new Intent(this, LoginActivity.class);
                 startActivity(intent);
                 break;
 
