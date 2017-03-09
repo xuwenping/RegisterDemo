@@ -8,8 +8,8 @@
 
     <TableRow>
 
-        <ImageView
-            android:src="@drawable/phone"
+        <TextView
+            android:text="用户名:"
             android:layout_height="wrap_content"
             />
 

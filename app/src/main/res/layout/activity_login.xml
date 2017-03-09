@@ -6,6 +6,7 @@
 
     <!--增加自定义控件-->
     <com.example.administrator.resgistdemo.TitleLayout
+        android:id="@+id/title_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
@@ -25,7 +26,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
-            android:text="test"
+            android:hint="请输入手机号"
             android:background="@drawable/input"
             android:layout_width="0dp"
             android:layout_weight="5"
@@ -46,7 +47,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
-            android:text="test"
+            android:hint="请输入密码"
             android:background="@drawable/input"
             android:layout_width="0dp"
             android:layout_weight="5"
@@ -56,6 +57,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/login_btn"
         android:background="@drawable/login_btn_backgroud"
         android:text="登录"
         android:layout_marginTop="25dp"
