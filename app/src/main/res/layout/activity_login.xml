@@ -5,13 +5,13 @@
     android:layout_height="match_parent">
 
     <!--增加自定义控件-->
-    <com.example.administrator.resgistdemo.TitleLayout
+    <com.example.administrator.resgistdemo.customLayout.TitleLayout
         android:id="@+id/title_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
 
-    </com.example.administrator.resgistdemo.TitleLayout>
+    </com.example.administrator.resgistdemo.customLayout.TitleLayout>
 
     <LinearLayout
         android:layout_marginTop="8dp"
@@ -26,6 +26,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
+            android:id="@+id/login_input_phone"
             android:hint="请输入手机号"
             android:background="@drawable/input"
             android:layout_width="0dp"
@@ -41,12 +42,13 @@
         android:layout_height="50dp">
 
         <ImageView
-            android:src="@drawable/phone"
+            android:src="@drawable/password"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
 
         <EditText
+            android:id="@+id/login_input_pwd"
             android:hint="请输入密码"
             android:background="@drawable/input"
             android:layout_width="0dp"
@@ -60,8 +62,16 @@
         android:id="@+id/login_btn"
         android:background="@drawable/login_btn_backgroud"
         android:text="登录"
+        android:textSize="24sp"
         android:layout_marginTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="60dp" />
+
+    <Button
+        android:layout_marginTop="3dp"
+        android:background="@drawable/retrieve_pwd"
+        android:layout_gravity="right"
+        android:layout_width="100dp"
+        android:layout_height="30dp" />
 
 </LinearLayout>

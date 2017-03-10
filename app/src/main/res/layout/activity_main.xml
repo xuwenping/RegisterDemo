@@ -1,86 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:stretchColumns="1"
-    tools:context="com.example.administrator.resgistdemo.MainActivity">
+    android:layout_height="match_parent">
 
-    <TableRow>
+    <com.example.administrator.resgistdemo.customLayout.TitleLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
 
-        <TextView
-            android:text="用户名:"
-            android:layout_height="wrap_content"
-            />
+    </com.example.administrator.resgistdemo.customLayout.TitleLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@drawable/phone"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
 
         <EditText
-            android:id="@+id/user_name"
-            android:hint="您的账户名"
-            android:layout_height="wrap_content"
-            />
-    </TableRow>
+            android:id="@+id/input_phone"
+            android:hint="请输入手机号"
+            android:background="@drawable/input"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content" />
 
-    <TableRow>
-        <TextView
-            android:text="设置密码:"
-            android:layout_height="wrap_content"
-            />
-        <EditText
-            android:id="@+id/passwd"
-            android:inputType="textPassword"
-            android:hint="建议至少使用二种字符组合"
-            android:layout_height="wrap_content"
-            />
-    </TableRow>
+    </LinearLayout>
 
-    <TableRow>
-        <TextView
-            android:text="确认密码:"
-            android:layout_height="wrap_content"
-            />
-        <EditText
-            android:id="@+id/repasswd"
-            android:hint="请再次输入密码"
-            android:inputType="textPassword"
-            android:layout_height="wrap_content"
-            />
-    </TableRow>
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
 
-    <TableRow>
-        <TextView
-            android:text="中国0086:"
-            android:layout_height="wrap_content"
-            />
-        <EditText
-            android:id="@+id/register_phone"
-            android:hint="建议使用常用手机号码"
-            android:layout_height="wrap_content"
-            />
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:text="手机验证码:"
-            android:layout_height="wrap_content"
-            />
-        <EditText
-            android:id="@+id/phono_num_verify_no"
-            android:hint="请输入手机验证码"
-            android:layout_height="wrap_content"
-            />
-        <!--<Button-->
-            <!--android:id="@+id/get_verify_no"-->
-            <!--android:text="获取验证码"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--/>-->
-    </TableRow>
+        <ImageView
+            android:src="@drawable/password"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
 
-    <TableRow>
-        <Button
-            android:id="@+id/register"
-            android:textSize="24sp"
-            android:text="立即注册"
-            android:layout_span="2"
-            android:layout_height="wrap_content"
-            />
-    </TableRow>
-</TableLayout>
+        <EditText
+            android:id="@+id/input_passwd"
+            android:hint="请输入密码"
+            android:background="@drawable/input"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@drawable/verify_code"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:background="@drawable/input"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_verify_code"
+                android:hint="请输入验证码"
+                android:background="@drawable/input"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/send_verify_code_btn"
+                android:text="获取验证码"
+                android:background="@drawable/verify_btn"
+                android:layout_margin="10dp"
+                android:layout_width="120dp"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:background="@drawable/login_btn_backgroud"
+        android:text="注册"
+        android:textSize="24sp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+</LinearLayout>
