@@ -6,10 +6,10 @@
 
 1. 登录界面
 
-   ![image](https://github.com/xuwenping/RegisterDemo/screenshots/login.png)
+   ![image](https://github.com/xuwenping/RegisterDemo/raw/master/screenshots/login.png)
 
 2. 注册界面
 
-   ![image](https://github.com/xuwenping/RegisterDemo/screenshots/register.png)
+   ![image](https://github.com/xuwenping/RegisterDemo/raw/master/screenshots/register.png)
 
    ​
